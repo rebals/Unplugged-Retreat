@@ -96,6 +96,14 @@ footer {
     flex-flow: row wrap;
 }
 
+header {
+  padding: 15px 0;
+}
+
+header .content-wrapper {
+  margin: 0;
+}
+
 .content-wrapper{
   display: flex;
   justify-content: center;
@@ -103,6 +111,7 @@ footer {
 }
 
 .header-divider {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,15 +119,33 @@ footer {
 }
 
 header nav {
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 header nav ul {
-  display: flex;
+  width: 44%;
+  display: flex; 
   justify-content: center;
   align-items: center;
+}
+
+footer .content-wrapper {
+  width: 90%;
+}
+
+footer{
+  padding: 50px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+.reviews h3{
+  width: 48%;
 }
 
 .copyright {
