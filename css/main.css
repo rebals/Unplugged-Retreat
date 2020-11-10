@@ -96,6 +96,8 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  color: #e2e3ed;
+  text-align: left;
 }
  
 ul, 
@@ -117,7 +119,6 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875rem;
   line-height: 30px;
-  color: #e2e3ed;
   font-weight: 500;
 }
  
@@ -125,22 +126,21 @@ h3,
 h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
-  color: #e2e3ed;
+  margin: 20px 0;
   font-weight: 500;
 }
  
 p {
   font-size: 0.875em;
   line-height: 18px;
-  color: #e2e3ed;
 }
  
 img {
- 
+  width: 100%;
 }
  
 figure {
- 
+  margin: 0;
 }
  
 address {
@@ -152,6 +152,28 @@ address {
  
 .content-wrapper {
  
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* -------------------- Base Header - Footer Styles -------------------- */
@@ -225,15 +247,24 @@ footer p {
    Homepage Page
    ========================================================================== */
 
+.hero-area {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  background-image: url('../img/hero.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center
+}
 
 .hero-area h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875rem;
   color: #e2e3ed;
-  display: flex;
+  
   justify-content: flex-start;
+  align-items: flex-start;
   font-weight: 400;
-  padding: 0 0 0 38px;
 }
 
 aside {
@@ -246,13 +277,17 @@ aside {
 
 form {
   color: #e2e3ed;
-  background-color: #2a423a;
+  background-color: #326353;
 }
 .features {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 50px 0;
+}
+.features {
+  background: url('../img/background.jpg')center no-repeat;
+  background-size: cover;
 }
 
 .features article {
@@ -264,11 +299,12 @@ form {
   margin: 0;
 }
 .reviews {
-  padding: 50px 20px;
+  padding: 15px 20px;
+  background-color: #527158;
 }
 
 .reviews h3 {
-  width: 50%;
+  width: 60%;
 }
 
 /* ==========================================================================
@@ -340,28 +376,7 @@ form {
 aside .form {
   margin-top: 30px;
 }
-/* */ 
-input[type=text] {
-  box-sizing: border-box;
-  width: 100%;
-  color: #2a423a;
-  font-style: italic;
-  padding: 1em;
-}
- 
-input[type=button] {
-  width: 100%;
-  padding: 20px 0;
-  margin-top: 20px;
-  background-color: #2a423a;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 1.125em;
-  color: #e2e3ed;
-  border: none;
-  text-align: center;
-  text-transform: uppercase;
-}
+
 
 
 
