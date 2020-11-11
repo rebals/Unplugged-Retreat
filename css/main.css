@@ -553,9 +553,17 @@ aside .form {
     width: 45%;
   }
 
+  .map figure {
+    
+    padding-bottom: 80%; 
+    
+  }
+  
+  
+
   .contact-section .content-wrapper h2 {
     width: 80%;
-}
+  }
 
   .contact-content {
       display: flex;
@@ -638,6 +646,12 @@ aside .form {
 
   .mission-content{
     width: 95%;
+  }
+
+  .map figure {
+    
+    padding-bottom: 50%; 
+    
   }
   
   /* ==========================================================================
