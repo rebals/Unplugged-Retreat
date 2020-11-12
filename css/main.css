@@ -285,6 +285,7 @@ form {
   align-items: center;
   padding: 50px 0;
 }
+
 .features {
   background: url('../img/background.jpg')center no-repeat;
   background-size: cover;
@@ -298,6 +299,12 @@ form {
 .features p {
   margin: 0;
 }
+
+.features i {
+	font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
 .reviews {
   padding: 15px 20px;
   background-color: #527158;
