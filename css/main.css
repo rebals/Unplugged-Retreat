@@ -243,6 +243,19 @@ footer p {
   margin: 50px 0;
 }
 
+.social-icons i {
+  font-size: 3.75em;
+  color: #527158;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
 /* ==========================================================================
    Homepage Page
    ========================================================================== */
