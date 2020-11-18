@@ -150,16 +150,12 @@ address {
   color: #e2e3ed;
 }
  
-.content-wrapper {
- 
-}
-
 input[type=text] {
   box-sizing: border-box;
   width: 100%;
   color: #2a423a;
   font-style: italic;
-  padding: 1em;
+ 
 }
  
 input[type=button] {
@@ -185,10 +181,6 @@ header, footer {
   background-color: #202322;
 }
 
-header {
-  padding: 15px 80px 0 50px;
-}
-
 header .content-wrapper {
   display: flex;
   justify-content: center;
@@ -197,26 +189,35 @@ header .content-wrapper {
   margin: 0;
 }
 
-header img 
-
-.header-divider {
-  width: 100%;  
-}
-
-header nav {
-  width: 100%;
+header figure {
+  width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
-  
+  padding: 15px 0;
+}
+
+.header-divider {
+  width: 100%;
+  height: 1px;
+  margin: 0;
+  background: #3a3a3a;  
+}
+
+
+header nav {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;  
 }
 
 header nav ul {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  
+  padding: 0;
 }
 
 footer .content-wrapper {
@@ -244,16 +245,18 @@ footer p {
 }
 
 .social-icons i {
-  font-size: 3.75em;
+  font-size: 2.25em;
   color: #527158;
+  padding: 0 10px;
 }
 
 .social-icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  padding: 0 80px;
 }
 
 /* ==========================================================================
@@ -267,14 +270,14 @@ footer p {
   background-image: url('../img/hero.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center
+  background-position: center;
+  min-height: 600px;
 }
 
 .hero-area h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875rem;
-  color: #e2e3ed;
-  
+  color: #e2e3ed;  
   justify-content: flex-start;
   align-items: flex-start;
   font-weight: 400;
@@ -284,42 +287,54 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px 0;
   background-color: #527158;
 }
 
-form {
-  color: #e2e3ed;
-  background-color: #326353;
+aside .content-wrapper {
+  margin: 15px;
+  padding: 0 20px 0 20px;
 }
+
+aside .form {
+  margin-top: 30px;
+}
+
 .features {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 0;
-}
-
-.features {
+  flex-flow: row wrap;
   background: url('../img/background.jpg')center no-repeat;
   background-size: cover;
+  background-color: #527158;
+}
+
+
+.features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+ 
 }
 
 .features article {
-  width: 85%;
-  text-align: center;
+  width: 60%;
+  padding: 0 65px;
 }
 
 .features p {
   margin: 0;
+  text-align: center;
 }
 
 .features i {
-	font-size: 3.75em;
-  margin-bottom: 40px;
+	font-size: 3.75em;  
+  padding: 65px 0 40px 0;
 }
 
 .reviews {
-  padding: 15px 20px;
+  padding: 15px 15px;
   background-color: #527158;
 }
 
@@ -358,6 +373,10 @@ form {
 }
 
 /* -------------------- Contact Section -------------------- */
+.mission p {
+  line-height: 18px;
+}
+
 .contact-section {
   display: flex;
   justify-content: center;
@@ -366,11 +385,8 @@ form {
   text-align: left;
   background-color: #2a423a;
 }
-.mission p {
-  line-height: 18px;
-}
 
-.contact-content p{
+.contact-section p{
   margin: 0;
 }
 /* ==========================================================================
@@ -397,21 +413,20 @@ form {
 }
 
 .faq h2 {
-  line-height: 30px;
+  margin: 0 0 40px;
+  line-height: 1;
 }
 
-.faq h4 {
-  line-height: 24px;
+.faq-content h4 {
+  margin-top: 0;
 }
 
-.faq p {
+.faq-content p {
   line-height: 18px;
 }
 
 
-aside .form {
-  margin-top: 30px;
-}
+
 
 
 
@@ -506,13 +521,28 @@ aside .form {
 
 @media only screen and (min-width: 768px) {
 /*Tablet styles here*/
+  h2 {
+  font-size: 2.25em;
+  line-height: 1.333;
+  }
+
+  h3 {
+  font-size: 1.5em;
+  line-height: 1.25;
+  }
+
+
   header { 
     justify-content: space-around;
   }
 
   header .content-wrapper {
-    width: 80%;
+    width: 85%;
     justify-content: space-between;
+  }
+
+  header figure {
+    width: 35%;
   }
 
   header nav {
@@ -523,6 +553,10 @@ aside .form {
     justify-content: space-between;
   }
 
+  .header-divider {
+    display: none;
+  }
+
   .footer-content {
     display: flex;
     justify-content: space-around;
@@ -530,8 +564,9 @@ aside .form {
   }
 
   .hero-area h1{
-    width: 50%;
-    padding: 0 60px;
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
   }
 
   aside .content-wrapper {
@@ -539,26 +574,67 @@ aside .form {
     justify-content: space-around;
     align-items: center;
     flex-flow: row nowrap;
+    margin: 0 0 15px 0;
+  }
+
+  aside p{
+    width: 70%;
+  } 
+
+  aside h3 {
+    width: 60%;
+    margin: 0;
+  }
+
+  .features .content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow:  wrap;
+    margin: 50px;   
+  }
+
+  .features h2 {
+    font-size: 2.25em;
   }
 
   .features article {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    flex-flow: row nowrap;
-    flex-basis: inherit;
+    flex-flow: column wrap;
+    flex-basis: 200px;  
+  }
+
+  .features .features-items {
+    width: 25%;
+  }
+
+  .features i {
+    font-size: 4.5em;
+  }
+  
+  .reviews .content-wrapper {
+    margin: 0 25px;
   }
 
   .reviews article {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 100%;
   }
-  .footer-content {       
-    justify-content: space-around;        
-  }   
-  
-  .features article {
-    flex-basis: 60%;
+
+
+  .reviews h2 {
+    width: 90%;
+  }
+
+  .reviews h3 {
+    width: 80%;
+    margin: 0;
+  }
+
+  .reviews .reviews-content {
+    padding: 0 15px;
   }
   /* ==========================================================================
    About Page
@@ -574,37 +650,48 @@ aside .form {
   }
 
   .map figure {
-    
-    padding-bottom: 80%; 
-    
+    padding-bottom: 80%;    
   }
   
-  
-
-  .contact-section .content-wrapper h2 {
-    width: 80%;
+  .contact-section .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+   
+    flex-flow: wrap;
+    flex-basis: 73%;
   }
 
-  .contact-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      flex-flow: wrap;
+  .contact-section h2 {
+    font-size: 2.25em;
   }
 
+  .contact-section h3 {
+    font-size: 1.5em;
+  }
+ 
+  .contact-section .chat {
+    padding-bottom: 15px;
+  }
   /* ==========================================================================
-   FAQ Page
-   ========================================================================== */
-   .faq .content-wrapper {
-    justify-content: space-around;
+  FAQ Page
+  ========================================================================== */
+
+  .faq .content-wrapper {
+    justify-content: space-between;
   }
 
   .faq-content {
-      flex-basis: 40%;
+    flex-basis: 45%;
   }
 
   .faq h2 {
-      width: 100%;
+    width: 100%;
+  }
+
+  .faq h4,
+  .faq p {
+    font-size: 0.875em;
+    line-height: 1.125em;
   }
 }
      
@@ -614,6 +701,7 @@ aside .form {
     max-width: 960px;
 
   }
+  
 
   header nav ul {
     justify-content: space-around;
@@ -630,31 +718,56 @@ aside .form {
     display: flex;   
     justify-content: space-around;
     align-items: center;
-    width: 90%;    
+    width: 100%;    
   }
   
-  .form, .form-description aside{
-  padding: 0 80px;
+  aside h3 {
+    font-size: 1.875em;
+    width: 80%;
+  }
+  
+  aside p {
+    font-size: 1.125em;
   }
 
   /* Features */
+
+  
   .features h2 {
-    width: 90%;
+    
+    width: 95%;
   }
+
   .features {
-    flex-basis: 50%;
+    flex-basis: 100%;
   }
 
   .features article {
-    width: 45%;
+    width: 100%;
+    flex-basis: 150px;
   }
 
   /* Reviews */
-  .reviews {
-    padding: 0 200px;
+  .reviews .content-wrapper {
+    width: 75%;
+    margin: 0 25px;
+    padding: 0 150px;
   }
   .reviews article {
-    width: 60%;
+    width: 95%;
+    
+  }
+
+  .reviews h2 {
+    font-size: 2.25em;
+  }
+
+  .reviews h3 {
+    font-size: 1.875em;
+  }
+
+  .reviews p {
+    font-size: 1.125em;
   }
 
   /* ==========================================================================
@@ -669,9 +782,15 @@ aside .form {
   }
 
   .map figure {
-    
-    padding-bottom: 50%; 
-    
+    padding-bottom: 50%;     
+  }
+
+  .contact-section .content-wrapper {
+    flex-basis: 700px;
+  }
+
+  .contact-section .chat {
+    padding: 0 85px 20px 0;
   }
   
   /* ==========================================================================
